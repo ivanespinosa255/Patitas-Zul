@@ -150,7 +150,7 @@ nav a:hover {
 }
 
 
-/* Galería */
+/* Galeria */
 #galeria {
   padding: 60px 20px;
   background: linear-gradient(to bottom, #fac474 0%, #fff8e1 40%);
@@ -199,6 +199,64 @@ nav a:hover {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+
+/* Guarderia */
+#guarderia {
+  padding: 60px 20px;
+  background: #fff8e1;
+  text-align: center;
+}
+
+#guarderia h2 {
+  margin-top: 35px;
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 4em;
+  color: rgb(247, 100, 97);
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 50px;
+}
+
+#guarderia video {
+  width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#guarderia .video-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 15px;
+  width: 700px;
+  max-width: 90%; /* Para que se achique en pantallas chicas */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  transition: transform 0.3s;
+  margin-bottom: 40px;
+}
+
+#guarderia .video-card video:hover {
+  transform: scale(1.02);
+}
+
+#guarderia .video-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#guarderia .video-card p {
+  color: #333;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+  margin: 5px 0;
 }
 
 
