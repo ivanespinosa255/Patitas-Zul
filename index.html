@@ -25,6 +25,7 @@
       <ul>
         <li><strong><a href="#inicio">Inicio</a></strong></li>
         <li><strong><a href="#galeria">Galería</a></strong></li>
+        <li><strong><a href="#guarderia">Guardería</a></strong></li>
         <li><strong><a href="#servicios">Servicios</a></strong></li>
         <li><strong><a href="#contacto">Contacto</a></strong></li>
       </ul>
@@ -51,26 +52,37 @@
         <img src="./benji antes.png">
         <img src="./benji despues.png">
         <p><strong>Nombre:</strong> Benjy</p>
-        <p><strong>Descripción:</strong> Baño completo y corte higienico</p>
       </div>
       <div class="card">
         <img src="./frida antes.png">
         <img src="./frida despues.png">
         <p><strong>Nombre:</strong> Frida</p>
-        <p><strong>Descripción:</strong> Baño completo y corte higienico</p>
       </div>
       <div class="card">
         <img src="./paqui antes.png">
         <img src="./paqui despues.png">
         <p><strong>Nombre:</strong> Paquito</p>
-        <p><strong>Descripción:</strong> Baño, secado y corte estético</p>
       </div>
       <div class="card">
-        <img src="./Clara antes.png">
-        <img src="./Clara despues.png">
+        <img src="./clara antes.png">
+        <img src="./clara despues.png">
         <p><strong>Nombre:</strong> Clara</p>
-        <p><strong>Descripción:</strong> Corte y limpieza general</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Guarderia -->
+
+  <section id="guarderia">
+    <h2>Guarderia canina</h2>
+    <div class="video-card">
+      <video src="rome.mp4" muted playsinline></video>
+    </div>
+    <div class="video-card">
+      <video src="jake.mp4" muted playsinline></video>
+    </div>
+    <div class="video-card">
+      <video src="kyra.mp4" muted playsinline></video>
     </div>
   </section>
 
@@ -98,10 +110,6 @@
         <img src="./oido.png">
         <p>Limpieza de oídos, glandulas, etc</p>
       </div>
-       <div class="servicio">
-        <img src="./casa.png">
-        <p>Guardería canina solo razas pequeñas (con previa adaptación)</p>
-      </div>
     </div>
   </section>
 
@@ -109,7 +117,7 @@
   <section id="contacto">
     <h2>Contacto</h2>
     <p>📍 <strong>Zona:</strong> Lanús, Buenos Aires</p>
-    <p>📷 <strong>Instagram:</strong> <a href="https://www.instagram.com/zulmaedithbarreiro/">zulmaedithbarreiro</a></p>
+    <p>✉️ <strong>Email:</strong> <a href="mailto:zulmy@gmail.com">zulmy@gmail.com</a></p>
     <p>📞 <strong>Teléfono:</strong> +54 9 11 5740-3759</p>
 
     <a href="https://wa.me/5491157403759?text=¡Hola%20Zulma!%20Quisiera%20hacer%20una%20consulta%20sobre%20baño%20o%20guardería%20canina." 
@@ -122,10 +130,27 @@
   <footer>
     <p>© 2025 Iván Espinosa</p>
   </footer>
+
+  <script>
+  document.querySelectorAll('#guarderia video').forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+    });
+
+    video.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  });
+</script>
 </body>
 </html>
-
-
-
 
 
